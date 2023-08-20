@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "entityprediction",
+  "version": "${version}",
+  "name": "entityprediction",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/itsja/entityprediction"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/entityprediction/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "tk.jandev.entityprediction.client.EntitypredictionClient"
+    ],
+    "main": [
+      "tk.jandev.entityprediction.Entityprediction"
+    ]
+  },
+  "mixins": [
+    "entityprediction.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
